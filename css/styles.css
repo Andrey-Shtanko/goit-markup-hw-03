@@ -196,6 +196,7 @@ footer .second-part-logo {
 /* для портфолио */
 .portfolio {
   margin-top: 94px;
+  margin-bottom: 94px;
 }
 .portfolio .button {
   border-radius: 4px;
@@ -216,12 +217,16 @@ footer .second-part-logo {
   color: var(--hover-text);
 }
 .portfolio .title {
+  margin-bottom: 4px;
+  margin-top: 20px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio .description {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
 }
