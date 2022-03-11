@@ -41,6 +41,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   outline: 2px solid tomato;
 }
 h1,
@@ -56,7 +58,30 @@ ul {
 }
 
 /* навигация */
+.page .container {
+  display: flex;
+  align-items: center;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.page-nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.page-nav-list .item {
+  /* border: 1px solid tomato; */
+  margin-right: 50px;
+}
+.page-nav-list .item:last-child {
+  margin-right: 0;
+}
 .page-nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -65,6 +90,17 @@ ul {
 }
 .page-nav-list .link.current {
   color: var(--accent-color);
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts .item {
+  /* border: 1px solid tomato; */
+  margin-right: 50px;
+}
+.contacts .item:last-child {
+  margin-right: 0;
 }
 .contacts .link {
   color: var(--primary-text-color);
