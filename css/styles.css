@@ -58,10 +58,12 @@ ul {
 }
 
 /* навигация */
+.page {
+  border-bottom: 1px solid #ececec;
+}
 .page .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .page-nav {
   display: flex;
@@ -95,6 +97,11 @@ ul {
 .contacts {
   display: flex;
   margin-left: auto;
+}
+.contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts .item {
   /* border: 1px solid tomato; */
@@ -132,6 +139,8 @@ ul {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -163,6 +172,9 @@ ul {
 /* преимущества */
 .advantages-list {
   display: flex;
+}
+.advantages-list .item {
+  width: 270px;
 }
 .advantages-list .item:not(:last-child) {
   margin-right: 30px;
@@ -197,6 +209,12 @@ ul {
 .team-list {
   display: flex;
 }
+.team-list .item {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -207,7 +225,10 @@ ul {
 .team-title {
   margin-bottom: 50px;
 }
-
+.card-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .possibilities-title,
 .team-title {
   font-weight: 700;
@@ -216,7 +237,6 @@ ul {
   text-align: center;
 }
 .team-list .title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -224,7 +244,6 @@ ul {
   text-align: center;
 }
 .team-list .profession {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -243,6 +262,12 @@ footer {
   line-height: 1.71;
   color: #fff;
 }
+.page-address .address {
+  margin-bottom: 9px;
+}
+.page-address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .page-address .link {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -253,7 +278,10 @@ footer {
 footer .second-part-logo {
   color: var(--hover-text);
 }
-
+.footer .page-nav-logo {
+  display: block;
+  margin-bottom: 20px;
+}
 /* для портфолио */
 .portfolio-filter {
   display: flex;
@@ -262,12 +290,12 @@ footer .second-part-logo {
 .portfolio-filter .item:not(:last-child) {
   margin-right: 8px;
 }
-.filters {
-  margin-bottom: 34px;
-  height: 54px;
+.portfolio-filter {
+  margin-bottom: 50px;
 }
 .portfolio .button {
   border-radius: 4px;
+  border: none;
   padding: 6px 22px;
   min-width: 73px;
   font-family: inherit;
@@ -298,8 +326,11 @@ footer .second-part-logo {
 }
 .bottom-part {
   border: 1px solid #eeeeee;
-  border-top: 0;
+  border-top: none;
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .portfolio-list .item:nth-child(3n) {
   margin-right: 0;
@@ -309,8 +340,7 @@ footer .second-part-logo {
 }
 .portfolio .title {
   margin-bottom: 4px;
-  /* margin-top: 20px; */
-  margin-left: 24px;
+  /* margin-left: 24px; */
 
   font-weight: 700;
   font-size: 18px;
@@ -318,8 +348,8 @@ footer .second-part-logo {
   letter-spacing: 0.06em;
 }
 .portfolio .description {
-  margin-bottom: 20px;
-  margin-left: 24px;
+  /* margin-bottom: 20px;
+  margin-left: 24px; */
   font-size: 16px;
   line-height: 1.87;
 }
